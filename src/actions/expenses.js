@@ -22,6 +22,8 @@ export const startAddExpense = (expenseData = {}) => {
         id: ref.key,
         ...expense
       }));
+    }).catch((e)=>{
+      console.log(">>>>>>>>>",e)
     });
   };
 };
